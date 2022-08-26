@@ -8,7 +8,7 @@ const CreateForm = ({ onClick }) => {
 
   return (
     <div>
-      <div className='block p-6 rounded-lg shadow-lg bg-white max-w-sm'>
+      <div className='block p-6 rounded-lg shadow-lg bg-white w-72 sm:w-96'>
         <form>
           <div className='form-group mb-6'>
             <label

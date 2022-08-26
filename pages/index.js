@@ -47,7 +47,7 @@ const Home = () => {
   };
 
   return (
-    <div className='bg-[#eeeeee]  min-h-[calc(100vh-112px)] flex justify-center items-center'>
+    <div className='bg-[#eeeeee]  min-h-[calc(100vh-136px)] flex justify-center items-center'>
       Home
     </div>
   );

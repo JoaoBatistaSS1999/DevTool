@@ -63,11 +63,14 @@ const Rankings = () => {
 
   return (
     <div>
-      <div className='min-h-[calc(100vh-112px)] flex flex-col p-10'>
-        <div className='py-2  sm:px-6 '>
-          <div className='rounded-md bg-[#444444] p-5 '>
+      <div className='min-h-[calc(100vh-136px)] flex flex-col  sm:p-10'>
+        <div className='py-2  sm:px-6 text-center sm:text-start'>
+          <h3 className='font-medium leading-tight text-xl sm:text-3xl mt-0 mb-2 text-Black'>
+            General Rankings
+          </h3>
+          <div className='rounded-md bg-[#444444] sm:p-5 '>
             <table className='min-w-full'>
-              <thead className='bg-white border-b'>
+              <thead className='bg-white border-b '>
                 <tr>
                   <th
                     scope='col'
@@ -76,7 +79,7 @@ const Rankings = () => {
                   </th>
                   <th
                     scope='col'
-                    className='text-sm font-medium text-gray-900 px-6 py-4 text-left'>
+                    className=' text-sm font-medium text-gray-900 px-6 py-4 text-left'>
                     Name
                   </th>
                   <th

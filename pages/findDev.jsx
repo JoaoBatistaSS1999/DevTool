@@ -19,13 +19,13 @@ const FindDev = () => {
     .map((item) => <ListItem name={item.name} key={item.id} />);
 
   return (
-    <div className='bg-[#f1f1f1] min-h-[calc(100vh-112px)] p-5 flex flex-col justify-start text-center'>
+    <div className='bg-[#f1f1f1] min-h-[calc(100vh-136px)] sm:p-5 flex flex-col justify-start items-center text-center'>
       <h3 className='font-medium leading-tight text-3xl mt-0 mb-2 text-black'>
         Find Dev By Name
       </h3>
-      <div className=' p-5 flex-col items-center '>
+      <div className=' sm:p-5 flex-col items-center '>
         <div className='mb-3 flex justify-center'>
-          <div className='input-group w-80 '>
+          <div className='input-group w-60 sm:w-80 '>
             <input
               value={inputValue}
               onChange={handleNewValue}
@@ -38,11 +38,11 @@ const FindDev = () => {
           </div>
         </div>
 
-        <div className=' px-5 w-full  flex justify-center items-center align-middle'>
-          <div className=' w-fit text-start p-5'>
+        <div className=' sm:px-5 w-full sm:w-fit flex flex-col justify-center items-center align-middle'>
+          <div className='text-start p-2 sm:p-5'>
             <h4 className='text-md'>{isEmpty ? "Top 5 Ratings" : "Results"}</h4>
-            <div className='flex justify-center'>
-              <ul className='bg-white rounded-lg  border border-gray-200 w-96 text-gray-900 '>
+            <div className='w-72 flex justify-center'>
+              <ul className='bg-white rounded-lg  border border-gray-200 w-72 sm:w-96 text-gray-900 '>
                 {isEmpty ? (
                   bestRated.map((item) => (
                     <ListItem name={item.name} key={item.id} />
